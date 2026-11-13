@@ -7,6 +7,7 @@ A hands-on Terraform project that deploys an Amazon EC2 instance with CloudWatch
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-ap--south--1-FF9900?logo=amazonwebservices&logoColor=white)
 ![CloudWatch](https://img.shields.io/badge/Amazon-CloudWatch-FF4F8B?logo=amazoncloudwatch&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
@@ -28,6 +29,7 @@ A hands-on Terraform project that deploys an Amazon EC2 instance with CloudWatch
 14. [Cleanup](#14-cleanup)
 15. [Known Limitations](#15-known-limitations)
 16. [Future Improvements](#16-future-improvements)
+17. [License](#17-license)
 
 ---
 
@@ -82,6 +84,7 @@ flowchart LR
 ec2-automated-monitoring-self-healing/
 ├── README.md
 ├── .gitignore
+├── LICENSE                         # MIT License
 ├── screenshots/
 │   └── cloudwatch-dashboard.png
 └── terraform/
@@ -256,3 +259,7 @@ Type `yes` to confirm. This deletes the instance, alarms, dashboard, SNS topic a
 - Use VPC endpoints for Systems Manager and remove the public IP.
 - Store state in an S3 backend and deploy through the Project 02 CI/CD pipeline.
 - Derive resource names from `var.project_name`.
+
+## 17. License
+
+This project is licensed under the [MIT License](LICENSE).
