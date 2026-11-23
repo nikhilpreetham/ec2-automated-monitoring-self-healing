@@ -149,6 +149,8 @@ Recovery does **not** fix problems inside the instance, such as a crashed applic
 
 ## 7. Prerequisites
 
+> Commands are written for **Windows PowerShell**. Where Linux or macOS needs different syntax, a **Linux/macOS (Bash)** version follows directly below. All other commands work the same on every platform.
+
 - An AWS account with permissions for EC2, IAM, Systems Manager, SNS and CloudWatch.
 - AWS CLI configured (this project used a named profile, `terraform-bootstrap`).
 - Terraform `>= 1.5.0`.
@@ -158,7 +160,14 @@ Recovery does **not** fix problems inside the instance, such as a crashed applic
 
 ```powershell
 cd terraform
-Copy-Item terraform.tfvars.example terraform.tfvars    # Linux/macOS: cp terraform.tfvars.example terraform.tfvars
+Copy-Item terraform.tfvars.example terraform.tfvars
+```
+
+**Linux/macOS (Bash):**
+
+```bash
+cd terraform
+cp terraform.tfvars.example terraform.tfvars
 ```
 
 Set `alert_email` in `terraform.tfvars`:
